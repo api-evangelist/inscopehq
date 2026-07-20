@@ -1,0 +1,32 @@
+generated: '2026-07-19'
+method: searched
+source: https://auth.inscopehq.com/.well-known/openid-configuration
+docs: https://www.inscopehq.com/security-privacy-and-trust
+summary:
+  types: [oauth2, openIdConnect]
+  oauth2_flows: [authorizationCode]
+  identity_provider: PropelAuth (hosted tenant at auth.inscopehq.com)
+  pkce: S256
+  notes: >-
+    This profile describes Inscope's application sign-in surface (OIDC), the
+    only authorization surface published publicly. Inscope exposes no public
+    product API, so there is no API-key or bearer-token developer auth to
+    document. Machine-to-machine access, if any, is not publicly documented.
+schemes:
+- name: openIdConnect
+  type: openIdConnect
+  openIdConnectUrl: https://auth.inscopehq.com/.well-known/openid-configuration
+  issuer: https://auth.inscopehq.com
+  sources: [well-known/inscopehq-openid-configuration.json]
+- name: oauth2
+  type: oauth2
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://auth.inscopehq.com/propelauth/oauth/authorize
+    tokenUrl: https://auth.inscopehq.com/propelauth/oauth/token
+    userinfoUrl: https://auth.inscopehq.com/propelauth/oauth/userinfo
+    scopes:
+      openid: OpenID Connect authentication
+      email: Access to the user's email address
+      profile: Access to basic profile claims (first_name, last_name, picture_url)
+  sources: [well-known/inscopehq-openid-configuration.json]
