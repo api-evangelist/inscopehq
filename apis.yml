@@ -1,9 +1,29 @@
 aid: inscopehq
-name: Inscopehq
-description: 'Inscopehq is a company surfaced as a portfolio company of norwest-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting
-  the enrichment pipeline.'
+name: Inscope
+description: >-
+  Inscope is an AI-powered financial reporting and automation platform for
+  accounting firms and enterprise finance teams. It drafts accurate,
+  GAAP-compliant financial statements, cash flow statements, and audit
+  workpapers in minutes, keeping a human reviewer in the loop to review and
+  sign off. The platform targets the financial close, reporting, and audit
+  workflow, and states SOC 2 Type I and Type II certification with GDPR/CCPA
+  compliance. Inscope is a private SaaS backed by Norwest Venture Partners; it
+  publishes no public product API or developer portal today. Customer sign-in
+  runs on a PropelAuth-hosted OpenID Connect tenant at auth.inscopehq.com.
 url: https://raw.githubusercontent.com/api-evangelist/inscopehq/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://cdn.prod.website-files.com/6723db9c74aadf941c7051ab/673bd35683a5e10b646a07d1_Opengraph%20Image.png
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -12,10 +32,17 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-- Unknown
+- Financial Reporting
+- Accounting
+- Audit
+- Artificial Intelligence
+- Fintech
+- Financial Close
+- GAAP
+- SaaS
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -25,3 +52,28 @@ maintainers:
 common:
 - type: Website
   url: https://inscopehq.com
+- type: Blog
+  url: https://www.inscopehq.com/blog
+- type: Login
+  url: https://auth.inscopehq.com/en/login
+- type: TermsOfService
+  url: https://www.inscopehq.com/terms
+- type: PrivacyPolicy
+  url: https://www.inscopehq.com/privacy-policy
+- type: TrustCenter
+  url: security/inscopehq-trust-center.yml
+- type: Compliance
+  url: https://www.inscopehq.com/security-privacy-and-trust
+- type: Authentication
+  url: authentication/inscopehq-authentication.yml
+- type: WellKnown
+  url: well-known/inscopehq-well-known.yml
+- type: DomainSecurity
+  url: security/inscopehq-domain-security.yml
+- type: LLMsTxt
+  url: llms/inscopehq-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

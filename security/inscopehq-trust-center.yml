@@ -1,0 +1,23 @@
+generated: '2026-07-19'
+method: searched
+source: https://www.inscopehq.com/security-privacy-and-trust
+url: https://app.drata.com/trust/06809ee1-400c-4b4a-997e-df2e6b895b4d
+trust_center_platform: Drata
+certifications:
+- SOC 2 Type I
+- SOC 2 Type II
+compliance:
+- GDPR
+- CCPA
+contact: info@inscopehq.com
+evidence:
+- source: https://www.inscopehq.com/security-privacy-and-trust
+  keywords: [SOC 2 Type I, SOC 2 Type II, GDPR, CCPA, trust]
+- source: https://app.drata.com/trust/06809ee1-400c-4b4a-997e-df2e6b895b4d
+  kind: trust-center
+notes: >-
+  Inscope publishes its security posture on a Drata-hosted trust center and a
+  Security, Privacy & Trust marketing page. It states SOC 2 Type I and Type II
+  certification and GDPR/CCPA compliance. Security/compliance documents are
+  available on request via info@inscopehq.com. No published responsible-
+  disclosure policy or /.well-known/security.txt was found (404).

@@ -1,0 +1,21 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of inscopehq.com hosts
+hosts:
+- host: https://auth.inscopehq.com
+  documents:
+  - path: /.well-known/openid-configuration
+    status: 200
+    file: inscopehq-openid-configuration.json
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+- host: https://www.inscopehq.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+notes: >-
+  Inscope's customer sign-in runs on a PropelAuth-hosted tenant at
+  auth.inscopehq.com, which publishes a standard OpenID Connect discovery
+  document (authorization_code flow, PKCE S256, RS256 id tokens). No public
+  product API, OpenAPI, or developer portal is published; api.inscopehq.com
+  returns 404 at root and docs./developer. subdomains do not resolve.
